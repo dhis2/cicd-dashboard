@@ -54,7 +54,7 @@ function App() {
     }
     debugger;   
     return (
-        <>
+        <div style={{ margin: 30 }}>
             <h1>Workflow status overview</h1>
             <p></p>
             <b>Capture app</b>
@@ -70,9 +70,7 @@ function App() {
                 Verify commits workflow: {' '}
                 { lineListingAppData ? (<a href={lineListingAppData?.html_url} target="_blank">{lineListingAppResult}</a>) : null }
             </div>
-
-           
-        </>
+        </div>
     );
 
 }
