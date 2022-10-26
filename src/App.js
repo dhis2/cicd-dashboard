@@ -55,16 +55,23 @@ function App() {
     debugger;   
     return (
         <>
-            <b>Verify commits workflow</b>
+            <h1>Workflow status overview</h1>
+            <p></p>
+            <b>Capture app</b>
             <p></p>
             <div>
-                Capture app: {captureAppResult}
-                { captureAppData ? (<a href={captureAppData?.html_url}>link</a>) : null }
+                Verify commits workflow: {' '}
+                { captureAppData ? (<a href={captureAppData?.html_url} target="_blank">{captureAppResult}</a>) : null }
             </div>
+            <p></p>
+            <b>Line listing app</b>
+            <p></p>
             <div>
-                Line listing app: {lineListingAppResult}
-                { lineListingAppData ? (<a href={lineListingAppData?.html_url}>link</a>) : null }
+                Verify commits workflow: {' '}
+                { lineListingAppData ? (<a href={lineListingAppData?.html_url} target="_blank">{lineListingAppResult}</a>) : null }
             </div>
+
+           
         </>
     );
 
