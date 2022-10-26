@@ -52,7 +52,7 @@ function App() {
     } else {
         lineListingAppResult = lineListingAppData.status;
     }
-    debugger;   
+
     return (
         <div style={{ margin: 30 }}>
             <h1>Workflow status overview</h1>
